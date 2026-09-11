@@ -15,6 +15,9 @@ services:
       - DATABASE_URI
       - HEROKU_API_KEY
       - PORT
+      - TZ=Asia/Kolkata
+    # volumes:
+    #  - .:/DreamxBotz
     ports:
       - "${PORT:-8080}:${PORT:-8080}"
     restart: unless-stopped
